@@ -1,0 +1,7 @@
+<h1>Editing Candidate Detail</h1>
+
+<%= render 'form', candidate_detail: @candidate_detail , candidate:@candidate %>
+
+
+<%= link_to 'Show', candidate_candidate_detail_path(@candidate,@candidate_detail) %> |
+<%= link_to 'Back', candidate_candidate_details_path %>

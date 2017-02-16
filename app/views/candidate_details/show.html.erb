@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Designation:</strong>
+  <%= @candidate_detail.designation %>
+</p>
+
+<p>
+  <strong>Offer date:</strong>
+  <%= @candidate_detail.offer_date %>
+</p>
+
+<p>
+  <strong>Abandon date:</strong>
+  <%= @candidate_detail.abandon_date %>
+</p>
+
+<p>
+  <strong>Not join before:</strong>
+  <%= @candidate_detail.not_join_before %>
+</p>
+
+
+<%= link_to 'Edit', edit_candidate_candidate_detail_path(@candidate,@candidate_detail) %> |
+<%= link_to 'Back', candidate_candidate_details_path(@candidate) %>

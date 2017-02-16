@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Candidate Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>Offer date</th>
+      <th>Abandon date</th>
+      <th>Not join before</th>
+      <th>Candidate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @candidate_details.each do |candidate_detail| %>
+      <tr>
+        <td><%= candidate_detail.designation %></td>
+        <td><%= candidate_detail.offer_date %></td>
+        <td><%= candidate_detail.abandon_date %></td>
+        <td><%= candidate_detail.not_join_before %></td>
+        <td><%= link_to 'Show', candidate_candidate_detail_path(@candidate,candidate_detail) %></td>
+        <td><%= link_to 'Edit', edit_candidate_candidate_detail_path(@candidate,candidate_detail) %></td>
+        <td><%= link_to 'Destroy', candidate_candidate_detail_path(@candidate,candidate_detail), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Candidate Detail', new_candidate_candidate_detail_path(@candidate) %>

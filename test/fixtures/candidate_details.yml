@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  designation: MyString
+  offer_date: 2016-11-17
+  abandon_date: 2016-11-17
+  not_join_before: 1
+  candidate: one
+
+two:
+  designation: MyString
+  offer_date: 2016-11-17
+  abandon_date: 2016-11-17
+  not_join_before: 1
+  candidate: two

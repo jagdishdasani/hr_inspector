@@ -1,0 +1,17 @@
+                         Prefix Verb   URI Pattern                                                    Controller#Action
+    candidate_candidate_details GET    /candidates/:candidate_id/candidate_details(.:format)          candidate_details#index
+                                POST   /candidates/:candidate_id/candidate_details(.:format)          candidate_details#create
+ new_candidate_candidate_detail GET    /candidates/:candidate_id/candidate_details/new(.:format)      candidate_details#new
+edit_candidate_candidate_detail GET    /candidates/:candidate_id/candidate_details/:id/edit(.:format) candidate_details#edit
+     candidate_candidate_detail GET    /candidates/:candidate_id/candidate_details/:id(.:format)      candidate_details#show
+                                PATCH  /candidates/:candidate_id/candidate_details/:id(.:format)      candidate_details#update
+                                PUT    /candidates/:candidate_id/candidate_details/:id(.:format)      candidate_details#update
+                                DELETE /candidates/:candidate_id/candidate_details/:id(.:format)      candidate_details#destroy
+                     candidates GET    /candidates(.:format)                                          candidates#index
+                                POST   /candidates(.:format)                                          candidates#create
+                  new_candidate GET    /candidates/new(.:format)                                      candidates#new
+                 edit_candidate GET    /candidates/:id/edit(.:format)                                 candidates#edit
+                      candidate GET    /candidates/:id(.:format)                                      candidates#show
+                                PATCH  /candidates/:id(.:format)                                      candidates#update
+                                PUT    /candidates/:id(.:format)                                      candidates#update
+                                DELETE /candidates/:id(.:format)                                      candidates#destroy
